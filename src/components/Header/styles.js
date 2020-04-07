@@ -4,19 +4,19 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 25px 0;
 `;
 
 export const Logo = styled.img`
-  width: 120px;
+  width: 170px;
 
-  @media (max-width: 600px) {
-    width: 150px;
+  @media (max-width: 800px) {
+    width: 110px;
   }
 `;
 
 export const Menu = styled.nav`
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     display: none;
   }
   ul {
@@ -24,13 +24,13 @@ export const Menu = styled.nav`
     display: flex;
     li:first-child {
       background: #ec9900;
+      margin-left: 0;
     }
     li {
       text-transform: uppercase;
       font-size: 14px;
       cursor: pointer;
-      padding: 10px;
-      margin-left: 5px;
+      margin-left: 20px;
       transition: background 150ms linear;
 
       &:hover {
@@ -42,6 +42,8 @@ export const Menu = styled.nav`
       }
 
       a {
+        padding: 10px 18px;
+        display: block;
         font-size: 16px;
         text-decoration: none;
         color: #807b7b;

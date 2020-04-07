@@ -1,7 +1,11 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import Slider from '../../components/Slider';
 
 export default function Home() {
-  return <h1> Home </h1>;
+  return (
+    <main>
+      <Slider />
+    </main>
+  );
 }
