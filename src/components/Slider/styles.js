@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 100%;
   background: #f2f2f2;
   position: relative;
+  overflow: hidden;
 
   svg {
     cursor: pointer;
@@ -11,11 +12,21 @@ export const Container = styled.div`
     top: 50%;
     transform: translateY(-50%);
   }
+
   svg#left {
-    left: 20%;
+    left: 5%;
   }
   svg#right {
-    right: 20%;
+    right: 5%;
+  }
+
+  @media (max-width: 800px) {
+    svg#left {
+      left: 2%;
+    }
+    svg#right {
+      right: 2%;
+    }
   }
 `;
 
@@ -23,6 +34,7 @@ export const SliderContent = styled.ul`
   list-style: none;
   display: flex;
   transform: ${(props) => `translateX(${-props.translate * props.active}px)`};
+  transition: ${(props) => `transform ${props.transition}s linear`};
 `;
 
 export const Slide = styled.li`
@@ -32,6 +44,12 @@ export const Slide = styled.li`
   img {
     height: 600px;
     width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    img {
+      height: 350px;
+    }
   }
 `;
 

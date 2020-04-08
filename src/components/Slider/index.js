@@ -1,68 +1,97 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
-import Wrapper from '../Wrapper';
+
 import { Container, SliderContent, Slide, Dots, Dot } from './styles';
 
 export default function Slider() {
+  const getWidth = () => window.innerWidth;
+
   const [state, setState] = useState({
-    translate: 1920,
-    trasition: 0.45,
+    translate: 0,
+    transition: 0.2,
     active: 0,
   });
 
   const images = [
     {
-      id: 3,
+      id: 1,
       src: 'https://i.picsum.photos/id/1/1920/600.jpg',
     },
     {
-      id: 1,
+      id: 2,
       src: 'https://i.picsum.photos/id/2/1920/600.jpg',
     },
     {
-      id: 2,
-      src: 'https://i.picsum.photos/id/3/1920/600.jpg',
-    },
-    {
       id: 3,
-      src: 'https://i.picsum.photos/id/4/1920/600.jpg',
-    },
-    {
-      id: 1,
-      src: 'https://i.picsum.photos/id/5/1920/600.jpg',
+      src: 'https://i.picsum.photos/id/3/1920/600.jpg',
     },
   ];
 
-  const dots = [];
-
-  function generateDots() {
-    for (let i = 0; i < images.length - 2; i += 1) {
-      dots.push('dot');
+  const nextSlide = () => {
+    if (state.active === images.length - 1) {
+      return setState({
+        ...state,
+        translate: getWidth(),
+        transition: 0,
+        active: 0,
+      });
     }
-  }
 
-  generateDots();
+    setState({
+      transition: 0.2,
+      active: state.active + 1,
+      translate: getWidth(),
+    });
+  };
+
+  const prevSlide = () => {
+    if (state.active === 0) {
+      return setState({
+        transition: 0,
+        translate: getWidth(),
+        active: 2,
+      });
+    }
+
+    setState({
+      transition: 0.2,
+      active: state.active - 1,
+      translate: getWidth(),
+    });
+  };
 
   return (
-    <Container>
-      <SliderContent
-        translate={state.translate}
-        transition={state.transition}
-        active={state.active + 1}
-      >
-        {images.map((image) => (
-          <Slide key={image.id}>
-            <img src={image.src} alt="oi" />
-          </Slide>
-        ))}
-      </SliderContent>
-      <MdKeyboardArrowLeft id="left" size={40} color="#fff" />
-      <MdKeyboardArrowRight id="right" size={40} color="#fff" />
+    <>
+      <Container>
+        <SliderContent
+          translate={state.translate}
+          transition={state.transition}
+          active={state.active}
+        >
+          {images.map((image, i) => (
+            <Slide key={i}>
+              <img src={image.src} alt="oi" />
+            </Slide>
+          ))}
+        </SliderContent>
+        <MdKeyboardArrowLeft
+          onClick={prevSlide}
+          id="left"
+          size={50}
+          color="#fff"
+        />
+        <MdKeyboardArrowRight
+          onClick={nextSlide}
+          id="right"
+          size={50}
+          color="#fff"
+        />
+      </Container>
       <Dots>
-        {dots.map((dot, i) => (
-          <Dot active={state.active === i} />
+        {images.map((image, i) => (
+          <Dot key={i} active={state.active === i} />
         ))}
       </Dots>
-    </Container>
+    </>
   );
 }
