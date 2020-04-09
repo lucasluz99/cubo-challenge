@@ -22,7 +22,7 @@ export default function Services() {
 
         <ServicesList>
           <Service>
-            <MdRoom size={40} color="blue" />
+            <MdRoom size={40} color="#004890" />
             <Content>
               <h1>Lorem Ipsum</h1>
               <p>
@@ -35,7 +35,7 @@ export default function Services() {
           </Service>
 
           <Service>
-            <MdSupervisorAccount size={40} color="blue" />
+            <MdSupervisorAccount size={40} color="#004890" />
             <Content>
               <h1>Lorem Ipsum</h1>
               <p>
@@ -48,7 +48,7 @@ export default function Services() {
           </Service>
 
           <Service>
-            <MdTrendingUp size={40} color="blue" />
+            <MdTrendingUp size={40} color="#004890" />
             <Content>
               <h1>Lorem Ipsum</h1>
               <p>
@@ -61,7 +61,7 @@ export default function Services() {
           </Service>
 
           <Service>
-            <MdWork size={40} color="blue" />
+            <MdWork size={40} color="#004890" />
             <Content>
               <h1>Lorem Ipsum</h1>
               <p>

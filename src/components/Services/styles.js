@@ -27,10 +27,7 @@ export const Titles = styled.header`
     margin: 10px auto 0;
   }
 
-  @media (max-width: 800px) {
-    p {
-      width: 90%;
-    }
+
   }
 `;
 
@@ -52,9 +49,8 @@ export const Service = styled.li`
 
   @media (max-width: 800px) {
     width: 100%;
-    padding: 0 40px;
-    padding-left: 50px;
     margin-bottom: 20px;
+    padding: 0;
   }
 `;
 
