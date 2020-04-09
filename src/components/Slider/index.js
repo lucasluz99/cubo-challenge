@@ -4,7 +4,7 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 import { Container, SliderContent, Slide, Dots, Dot } from './styles';
 
 export default function Slider() {
-  const getWidth = () => window.innerWidth;
+  const getWidth = () => document.querySelector('#slide').clientWidth;
 
   const [state, setState] = useState({
     translate: 0,
@@ -64,6 +64,7 @@ export default function Slider() {
     <>
       <Container>
         <SliderContent
+          id="slide"
           translate={state.translate}
           transition={state.transition}
           active={state.active}

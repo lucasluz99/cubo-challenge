@@ -48,7 +48,7 @@ export const Slide = styled.li`
 
   @media (max-width: 800px) {
     img {
-      height: 350px;
+      height: 50vh;
     }
   }
 `;
