@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Graph from '../Graph';
-
+import CircularGraph from '../CircularGraph';
 import { Container, Content, Text, Graphs } from './styles';
 
 export default function About() {
@@ -22,9 +21,9 @@ export default function About() {
           </p>
         </Text>
         <Graphs>
-          <Graph title="Percentual" percent="18" />
-          <Graph title="Percentual" percent="75" />
-          <Graph title="Percentual" percent="50" />
+          <CircularGraph width={4} percent={18} title="percentual" text="18%" />
+          <CircularGraph width={4} percent={75} title="hora" text="12:00" />
+          <CircularGraph width={4} percent={30} title="valor" text="R$350" />
         </Graphs>
       </Content>
     </Container>
