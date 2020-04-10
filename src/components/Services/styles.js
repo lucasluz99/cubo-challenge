@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin-top: 60px;
+  margin-top: 70px;
 
   p {
     color: #6a6a6a;
@@ -26,9 +26,6 @@ export const Titles = styled.header`
     text-align: center;
     margin: 10px auto 0;
   }
-
-
-  }
 `;
 
 export const ServicesList = styled.ul`
@@ -48,9 +45,15 @@ export const Service = styled.li`
   }
 
   @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 0;
+
+    h1 {
+      text-align: center;
+    }
   }
 `;
 
