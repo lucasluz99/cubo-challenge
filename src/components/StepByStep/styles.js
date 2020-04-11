@@ -7,7 +7,9 @@ export const Container = styled.div`
     text-transform: uppercase;
     color: #404040;
   }
-
+  svg {
+    min-width: 40px;
+  }
   > h1 {
     margin-bottom: 30px;
     font-size: 26px;
@@ -24,6 +26,14 @@ export const Container = styled.div`
     font-weight: bold;
     text-transform: uppercase;
   }
+
+  @media (max-width: 1150px) {
+    .arrow {
+      transform: rotate(90deg);
+      transform-origin: center;
+      margin: 20px 0;
+    }
+  }
 `;
 
 export const Steps = styled.div`
@@ -31,9 +41,14 @@ export const Steps = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1150px) {
+    flex-direction: column;
+  }
 `;
 
 export const Card = styled.div`
+  min-width: 200px;
   text-align: center;
   align-items: center;
 
@@ -45,5 +60,12 @@ export const Card = styled.div`
     max-width: 200px;
     color: #6a6a6a;
     font-size: 15px;
+  }
+
+  @media (max-width: 1150px) {
+    p {
+      max-width: 90%;
+      margin: 0 auto;
+    }
   }
 `;

@@ -2,6 +2,8 @@ import React from 'react';
 
 import { GiWorld } from 'react-icons/gi';
 import { FiShoppingCart } from 'react-icons/fi';
+import { AiOutlineLike } from 'react-icons/ai';
+import { MdLocalShipping } from 'react-icons/md';
 import { IoIosArrowDroprightCircle as Arrow } from 'react-icons/io';
 import Wrapper from '../Wrapper';
 
@@ -21,7 +23,7 @@ export default function StepByStep() {
               labore ea placeat, architecto
             </p>
           </Card>
-          <Arrow size={40} color="#b5e83f" />
+          <Arrow class="arrow" size={40} color="#b5e83f" />
           <Card>
             <FiShoppingCart size={100} color="#b5e83f" />
             <h1>Passo 2</h1>
@@ -30,18 +32,18 @@ export default function StepByStep() {
               labore ea placeat, architecto
             </p>
           </Card>
-          <Arrow size={40} color="#b5e83f" />
+          <Arrow class="arrow" size={40} color="#b5e83f" />
           <Card>
-            <GiWorld size={100} color="#b5e83f" />
+            <AiOutlineLike size={100} color="#b5e83f" />
             <h1>Passo 3</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
               labore ea placeat, architecto
             </p>
           </Card>
-          <Arrow size={40} color="#b5e83f" />
+          <Arrow class="arrow" size={40} color="#b5e83f" />
           <Card>
-            <GiWorld size={100} color="#b5e83f" />
+            <MdLocalShipping size={100} color="#b5e83f" />
             <h1>Passo 4</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
