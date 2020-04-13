@@ -5,6 +5,7 @@ import Services from '../../components/Services';
 import About from '../../components/About';
 import StepByStep from '../../components/StepByStep';
 import Form from '../../components/Form';
+import Data from '../../components/Data';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <StepByStep />
       <Form />
+      <Data />
     </main>
   );
 }
