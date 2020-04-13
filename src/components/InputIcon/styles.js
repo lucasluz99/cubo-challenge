@@ -9,7 +9,7 @@ export const Input = styled.div`
     font-size: 16px;
     height: 40px;
     width: 300px;
-    padding-left: 50px;
+    padding-left: 40px;
   }
 
   svg {

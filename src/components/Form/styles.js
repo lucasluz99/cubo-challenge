@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { darken } from 'polished';
 
 export const Container = styled.div`
@@ -32,7 +33,6 @@ export const Formik = styled.form`
 
     input {
       width: 100%;
-      margin-bottom: 20px;
     }
 
     button {
@@ -41,6 +41,14 @@ export const Formik = styled.form`
   }
 `;
 
+export const InputWrapper = styled.div`
+  margin-bottom: 20px;
+  h2 {
+    margin-top: 5px;
+    color: #222;
+    font-size: 16px;
+  }
+`;
 export const Texts = styled.div`
   text-align: center;
   color: #fff;
