@@ -23,7 +23,7 @@ export default function StepByStep() {
               labore ea placeat, architecto
             </p>
           </Card>
-          <Arrow class="arrow" size={40} color="#b5e83f" />
+          <Arrow className="arrow" size={40} color="#b5e83f" />
           <Card>
             <FiShoppingCart size={100} color="#b5e83f" />
             <h1>Passo 2</h1>
@@ -32,7 +32,7 @@ export default function StepByStep() {
               labore ea placeat, architecto
             </p>
           </Card>
-          <Arrow class="arrow" size={40} color="#b5e83f" />
+          <Arrow className="arrow" size={40} color="#b5e83f" />
           <Card>
             <AiOutlineLike size={100} color="#b5e83f" />
             <h1>Passo 3</h1>
@@ -41,7 +41,7 @@ export default function StepByStep() {
               labore ea placeat, architecto
             </p>
           </Card>
-          <Arrow class="arrow" size={40} color="#b5e83f" />
+          <Arrow className="arrow" size={40} color="#b5e83f" />
           <Card>
             <MdLocalShipping size={100} color="#b5e83f" />
             <h1>Passo 4</h1>

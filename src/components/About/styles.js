@@ -51,6 +51,7 @@ export const Text = styled.div`
     p {
       margin: 0 auto;
       margin-bottom: 30px;
+      text-align: center;
     }
   }
 `;
