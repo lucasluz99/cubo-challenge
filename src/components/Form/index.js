@@ -22,7 +22,7 @@ export default function Form() {
       <Wrapper>
         <Texts>
           <h1>Cadastre-se</h1>
-          <p>Lorem ipsum dolor sit amet consectetur iure non est></p>
+          <p>Lorem ipsum dolor sit amet consectetur iure non est</p>
         </Texts>
         <Formik onSubmit={formik.handleSubmit}>
           <InputIcon

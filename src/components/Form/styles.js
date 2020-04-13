@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { darken } from 'polished';
 
 export const Container = styled.div`
   margin-top: 40px;
@@ -19,6 +20,24 @@ export const Formik = styled.form`
     width: 100px;
     height: 40px;
     text-transform: uppercase;
+
+    transition: background 200ms linear;
+    &:hover {
+      background-color: ${darken(0.06, '#00b8e2')};
+    }
+  }
+
+  @media (max-width: 1150px) {
+    flex-direction: column;
+
+    input {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 100%;
+    }
   }
 `;
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { darken } from 'polished';
 
 export const Container = styled.div`
   text-align: center;
@@ -25,6 +26,10 @@ export const Container = styled.div`
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
+    transition: background 200ms linear;
+    &:hover {
+      background-color: ${darken(0.1, '#b5e83f')};
+    }
   }
 
   @media (max-width: 1150px) {
@@ -32,6 +37,10 @@ export const Container = styled.div`
       transform: rotate(90deg);
       transform-origin: center;
       margin: 20px 0;
+    }
+
+    a {
+      display: block;
     }
   }
 `;
