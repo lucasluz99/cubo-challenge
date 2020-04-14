@@ -6,6 +6,7 @@ import About from '../../components/About';
 import StepByStep from '../../components/StepByStep';
 import Form from '../../components/Form';
 import Data from '../../components/Data';
+import Footer from '../../components/Footer';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <StepByStep />
       <Form />
       <Data />
+      <Footer />
     </main>
   );
 }
