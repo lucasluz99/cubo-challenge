@@ -51,7 +51,9 @@ export default function StepByStep() {
             </p>
           </Card>
         </Steps>
-        <a href="/"> Ler mais</a>
+        <a href="/" title="Ler mais">
+          Ler mais
+        </a>
       </Container>
     </Wrapper>
   );
