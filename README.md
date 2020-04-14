@@ -6,10 +6,10 @@ No desafio é necessário consultar uma API e com os dados que ela retorna monta
 
 Também não tive acesso as imagens,então tive que improvisar.
 
-# Resultado esperado
+# Resultado Esperado - 
+![final](https://raw.githubusercontent.com/cubonetwork/frontend-challenge/master/layout-onepage.png)
 
-
-# Resultado Final - Screenshots
+# Resultado Final
 
 ## Header e Carousel
 ![headerEslider](https://user-images.githubusercontent.com/53489804/79276797-03ec8500-7e7f-11ea-858a-a4ae54e7e40a.png)
