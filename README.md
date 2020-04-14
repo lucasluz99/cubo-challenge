@@ -29,7 +29,7 @@ Também não tive acesso as imagens,tamanho de fontes espaçamento e etc,então 
 
 ![step](https://user-images.githubusercontent.com/53489804/79276934-3eeeb880-7e7f-11ea-99ba-9fd808ce85e6.png)
 
-## Formulário + Footer
+## Formulário ,Tabela + Gráfico Pizza e Footer
 
 ![Captura de tela de 2020-04-14 18-35-49](https://user-images.githubusercontent.com/53489804/79276964-5037c500-7e7f-11ea-9977-0552e0ca8c11.png)
 
