@@ -3,6 +3,7 @@ Este projeto faz parte do meu portifólio,encontrei ele na internet e resolvi fa
 
 # Observações
 Para verificar o que foi pedido no desafio, acesse: https://github.com/cubonetwork/frontend-challenge
+
 No desafio é necessário consultar uma API e com os dados que ela retorna montar uma tabela e um gráfico de pizza. Devido a este ser um desafio antigo a API não está mais online.Assim sendo, simulei as chamadas a API com um useEffect que alterava o estado do componente com dados estáticos.
 
 Também não tive acesso as imagens,então tive que improvisar.
